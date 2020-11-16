@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Connor Clayton</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-0">
+      <div class="navbar-header">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <span style="color: white;">Connor Clayton</span>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar navbar-nav ml-auto">
+          <li><a href="home" class="nav-items">Home</a></li>
+          <li><a href="projects" class="nav-items">Projects</a></li>
+          <li><a href="extracurriculars" class="nav-items">Other Interests</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-2 text-center">
+      <div class="pagebody">
+        <h3 style="padding-bottom: 25px;">Projects</h3>
+        <hr style="background-color: white;">
+        <div>
+          <h5>Automated Landing Zone Detection for Drones</h5>
+          <p>Summer 2020 -- Autonodyne LLC</p>
+          <p>
+              An important aspect of drone landing is making sure the area is safe to land on. My project was to automate this process. Several factors must be taken into account including the flatness of the ground at each point and proximity to obstacles. By combining results across multiple images from a video feed, points in 3D space are declared safe or unsafe and the final landing site can be chosen.
+          </p>
+          <p>Major contributions: near-real-time 3D scene mapping, ground flatness calculation (involves the Euclidean Distance Transform)</p>
+        </div>
+        <hr style="background-color: white;">
+        <div>
+          <h5>Parallel MST Finding Algorithms</h5>
+          <p>Fall 2019 -- Carnegie Mellon University 15-418</p>
+          <p>
+              In general, graph algorithms are not highly parallelizable because of frequent intermediate dependencies and limited arithmetic intensities. This makes their parallelization an interesting topic of study. This project investigates several parallel variations on Prim's and Boruvka's MST finding algorithms using OpenMP. The greatest speedup was found using Boruvka's algorithm with graphs represented as "flexible adjacency lists."
+          </p>
+          <p>Technologies used: C++, OpenMP</p>
+          <p>Read the final report <a href="15-418 Final Project Report.pdf" style="color: #0a122a;">here</a>.</p>
+          <p>View the source code <a href="https://github.com/cbclayto/parallel-minimum-spanning-forest" style="color: #0a122a;">here</a>.</p>
+          <a href="418 poster.pdf">
+            <img src="418 poster.jpg" alt="research poster" class="img-responsive poster" width="300">
+          </a>
+        </div>
+        <hr style="background-color: white;">
+        <div>
+          <h5>Modeling 3-Terminal Tandem Solar Cells as Equivalent Circuits</h5>
+          <p>Summer 2019 -- National Renewable Energy Laboratory, Golden CO</p>
+          <p>After decades of solar energy research, silicon solar cells (the dominant solar technology) are approaching their theoretical efficiency limit. To continue to progress, the solar community is looking beyond simple silicon cells toward alternatives such as tandem solar cells, which involve two or more vertically-layered cells. Tandem solar cells have already been proven to be significantly more efficient than standard single-junction cells.</p>
+          <p>3-terminal tandem solar cells are an alternative to typical tandem designs (namely, 2- and 4-terminal) with the potential to combine the benefits of both (high efficiency and ease of manufacturing). However, the benefits of the 3-terminal architecture come with a mitigating factor: increased operating complexity. This difficulty was the motivation for this project. In the study of solar cells, in particular the study of the integration of these cells into large-area modules, it is very useful to have a similar model that accurately approximates the device. A commonly-used circuit model for a typical, single-diode solar cell already exists, and this project created an analogous circuit model for a 3-terminal cell.</p>
+          <p>I created Python programs to quickly construct and analyze equivalent circuits, as well as compute valid tandem operation states. I showed that there exists an equivalent circuit model of a 3-terminal solar cell that predicts the operation of a real cell fairly accurately.</p>
+          <p>More details on this project will be released once a paper is published (expected late 2020).</p>
+          <p>Technologies used: Python (including pandas, SciPy, NumPy), Sentaurus (device simulator), SPICE (circuit simulator)</p>
+        </div>
+        <hr style="background-color: white;">
+        <div>
+          <h5>HybridD<sup>3</sup> Database: Facilitating Solar Energy Research</h5>
+          <p>Summer 2018 -- Duke University REU</p>
+
+          <p style="border: 2px; border-style: solid; border-color: #0a122a;">
+            <u>Publication</u> <br>
+            R. Laasner, X. Du, A. Tanikanti, C. Clayton, M. Govoni, G. Galli, M. Ropo, V. Blum. <a href="https://joss.theoj.org/papers/10.21105/joss.01945" style="color: #0a122a;">MatD3: A Database and Online Presentation Package for Research Data Supporting Materials Discovery, Design and Dissemination.</a> <i>Journal of Open Source Software</i> 5, 1945 (2020).
+          </p>
+
+          <p>Hybrid organic-inorganic perovskites (HOIPs) are one of the most studied classes of materials for photovoltaic application due to their incredible absorbtion capabilities. Less than a decade after the first HOIP-based solar cell, these materials comprise the fastest-growing class of solar absorbing materials, with record efficiencies rivaling those of silicon cells.</p>
+          <p>The HybridD<sup>3</sup> project is designed to store the bulk of modern HOIP data in a single location, allowing researchers to easily retrieve and compare useful data from many sources. The project is spearheaded by Dr. Volker Blum of the Mechanical Engineering and Materials Science department at Duke University and can be found at <u><a href="https://materials.hybrid3.duke.edu/" target="_blank" style="color: #0a122a;">materials.hybrid3.duke.edu</a></u>.</p>
+          <p>My roles in this project included developer and researcher. My work involved front- and back-end development of the database, restructuring much of the database tables and user interface to store data with complex relationships, such as authors. I also studied the literature on HOIPs and spoke with experts to determine how to maximize the usefulness of the database.</p>
+          <p>Technologies used: Django, Python, MySQL, HTML, CSS, JS</p>
+          <a href="poster.pdf">
+            <img src="poster.jpg" alt="research poster" class="img-responsive poster" width="300">
+          </a>
+        </div>
+        <hr style="background-color: white; margin-top: 25px;">
+        <div>
+          <h5>Take Note: Sheet Music Reader</h5>
+          <p>Spring 2017 -- Carnegie Mellon University 15-112</p>
+          <p>"Take Note" is a program I wrote in Python (with a UI created in TkInter) that takes an image of (simple) piano sheet music as input and plays it. The program parses the image as an array of pixels, identifying staff lines, the presence/absence of a bass clef, and the types, pitches, and order of notes and chords. It then plays corresponding .wav files to recreate the song. A demonstration is below (skip to <u><b>1:20</b></u> to see Canon in D in action):</p>
+          <div class="videoWrapper">
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/my_DDRc91k4">Video could not load, try another browser</iframe>
+          </div>
+        </div>
+        <hr style="background-color: white; margin-top: 25px;">
+        <div>
+          <h5>Mineral Analysis for the Carnegie Museum of Natural History</h5>
+          <p>Summer 2017-Spring 2018 -- Carnegie Mellon University</p>
+          <p>The Carnegie Museum of Natural History has tens of thousands of mineral samples, many of which were categorized a long time ago using imprecise techniques. I have been helping to go through these samples and correctly characterize them by chemistry and crystal structure.</p>
+          <p>Technologies used: Scanning Electron Microscopy (SEM), Electron Dispersive X-ray Spectroscopy (EDS), Powder X-ray Diffraction (XRD)</p>
+        </div>
+        <hr style="background-color: white; margin-top: 25px;">
+        <div>
+            <p>Updated August 2020</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+  </body>
+</html>

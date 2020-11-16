@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Minimum Spanning Forests</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <h2>Parallel Minimum Spanning Tree Data Structures and Algorithms</h2>
+        <h5>Connor Clayton and Jacqui Fashimpaur</h5>
+        <ul>
+          <li><a href="418 Final Project Proposal.pdf">Proposal</a></li>
+          <li><a href="Mid-Project Report.pdf">Mid-Project Report</a></li>
+          <li><a href="15-418 Final Project Report.pdf">Final Report</a></li>
+        </ul>
+
+        <a href="418 poster.pdf">
+          <img src="418 poster.jpg" alt="15-418 poster" class="img-responsive poster" width="300">
+        </a>
+
+    </div>
+  </body>
+</html>

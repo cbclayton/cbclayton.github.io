@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Connor Clayton</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-0">
+      <div class="navbar-header">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <span style="color: white;">Connor Clayton</span>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar navbar-nav ml-auto">
+          <li><a href="home" class="nav-items">Home</a></li>
+          <li><a href="projects" class="nav-items">Projects</a></li>
+          <li><a href="extracurriculars" class="nav-items">Other Interests</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg-3 text-center">
+      <h3>Other Interests</h3>
+      <p>Two of my favorite hobbies are swimming and playing piano.</p>
+      <div class="row pagebody">
+        <div class="col-sm-6">
+          <p>Swimming</p>
+          <img src="breaststroke.JPG" alt="swimming" width="100%" class="img-responsive rounded-circle">
+          <p class="text-justify" style="padding-top: 10px;">I started swimming when I was 13, and I recently finished my 4 year competitive swimming career at Carnegie Mellon. I love to swim because it lets me take my focus off of work for a few hours, and I get to have a lot of fun with my teammates along the way.</p>
+          <u>Honors</u>
+          <ul class="text-left" style="padding-left: 20px; padding-right: 20px;">
+              <li>NCAA All-American Honorable Mention 2017</li>
+              <li>Championship finalist at most competitive conference in Division III</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <p>Piano</p>
+          <img src="piano.jpg" alt="piano" width="100%" class="img-responsive rounded-circle">
+          <p class="text-justify" style="padding-top: 10px;">I've been teaching myself piano for over 10 years, and my favorite style is jazz. Check out some of my favorite songs below:</p>
+          <div class="row">
+            <div class="col-md-4">
+              <label for="Linus and Lucy">Linus and Lucy (Vince Guaraldi Trio)</label>
+            </div>
+            <div class="col-md-8">
+              <audio controls controlsList="nodownload" id="Linus and Lucy">
+                <source src="Linus and Lucy.m4a" type="audio/mpeg">
+              Your browser does not support audio.
+              </audio>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <label for="Layla">Layla (Eric Clapton)</label>
+            </div>
+            <div class="col-md-8">
+              <audio controls controlsList="nodownload" id="Layla">
+                <source src="Layla.m4a" type="audio/mpeg">
+                Your browser does not support audio.
+              </audio>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <label for="Canon in D">Canon in D (Johannes Pachelbel)</label>
+            </div>
+            <div class="col-md-8">
+              <audio controls controlsList="nodownload" id="Canon in D">
+                <source src="Canon in D.m4a" type="audio/mpeg">
+                Your browser does not support audio.
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+  </body>
+</html>
